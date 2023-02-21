@@ -3,12 +3,14 @@ $white2-color: #CCC5B9;
 $black-color: #000000;
 $black2-color: #403D39;
 $prim-color: #eb2828;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     background-color: $black-color;
-    font-family: "HelveticaNeue";
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     color: $white-color;
 }

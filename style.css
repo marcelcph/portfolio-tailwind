@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 * {
   margin: 0;
   padding: 0;
   background-color: #000000;
-  font-family: "HelveticaNeue";
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   color: #FFFCF2;
 }
