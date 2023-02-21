@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: "HelveticaNeue";
+  scroll-behavior: smooth;
+  color: #FFFCF2;
+}
+
+.top-section {
+  height: 100vh;
+}
+
+h1 {
+  color: #FFFCF2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 span {
+  outline: 2px;
+  -webkit-text-stroke: 2px #FFFCF2;
+  -webkit-text-fill-color: #000000;
+}
+
+h2 {
+  color: #FFFCF2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 200px;
+}
+
+.sectionheight {
+  min-height: 75vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hideonphone {
+    display: none;
+  }
+  .sectionheight {
+    min-height: 50vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
+.text {
+  position: relative;
+  font-size: 5rem;
+  animation: slide-up 2.5s;
+}
+
+.second {
+  top: -1rem;
+  animation: slide-left;
+}
+
+.desc {
+  animation: slide-left 2.5s;
+  font-size: 1.5em;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(-5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.progress-bar-height {
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */

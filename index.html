@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Margin på hele siden -->
+<div class="container mx-auto">
+    <!-- NAV -->
+
+    <nav class=" dark:bg-gray-900 text-xl">
+        <div class="flex flex-wrap items-center justify-between mx-auto">
+            <a class="navbar-brand text-green-600" href="#"><span class="text-white">"</span> Marcel <span class="text-white">"</span></a>
+        </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden >
+            <span class="sr-only"></span>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col m-4 mt-4 md:flex-row md:space-x-8 text-l">
+              <li class="text-gray-600">
+                <a href="#" class="block py-2 pl-3 pr-4" >"START"</a>
+              </li>
+              <li class="text-gray-600">
+                <a href="#" class="block py-2 pl-3 pr-4 ">"ABOUT"</a>
+              </li>
+              <li class="text-gray-600">
+                <a href="#" class="block py-2 pl-3 pr-4">"PROJECTS"</a>
+              </li>
+              <li class="text-gray-600">
+                <a href="#" class="block py-2 pl-3 pr-4">"SKILLS"</a>
+              </li>
+              <li class="text-gray-600">
+                <a href="#" class="block py-2 pl-3 pr-4 ">"CONTACT"</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+      
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="flex ">
+          <div class="md:w-6/12">
+            <div class="grid grid-cols-1 ">
+              <h1 class="text text-left"><span>HI!</span></h1>
+              <h2 class="text second text-left">I'm Marcel</h2>
+              <p class="text-muted desc">
+                "A <u class="text-red-600">webdeveloper</u> currently working on finishing my bachelor degree in Web development"
+              </p>
+            </div>
+          </div>
+          <div class="md:w-6/12 text">
+            <img src="./Gif.gif" alt="" class="mx-auto" />
+          </div>
+        </div>
+      </section>
+
+  <!-- About section -->
+  <section id="about" class="py-8 sectionheight">
+    <div class="container">
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="md:w-1/2">
+            <img class="md:block mx-auto mb-8" src="./question-gif.gif" alt="" />
+          </div>
+        <div class="md:w-1/2 text-center md:text-left text-2xl">
+          <h2 class="text">"FOR INFO"</h2>
+          <ul class="list-unstyled">
+            <li class="text-gray-800"><strong class="text-red-600">Name:</strong> Emil Marcel Mortensen</li>
+            <li class="text-gray-800"><strong class="text-red-600">Age:</strong> 25</li>
+            <li class="text-gray-800"><strong class="text-red-600">Location:</strong> Copenhagen, DK</li>
+            <li class="phone-number"><strong class="text-red-600">Phone:</strong>
+              <span class="inline-block md:inline visible-part text-gray-800">+45 42 43 </span>
+              <span class="inline-block md:inline hidden-part text-gray-800">** **</span>
+            </li>
+            <li class="text-gray-800"><strong class="text-red-600">Email:</strong> mm@marcelcph.dk</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- CARDS -->
+<section class="pt-5 h-screen sectionheight" id="projects">
+    <div class="container">
+      <h2 class="text">"FOR INSIGHT"</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg overflow-hidden border">
+          <img class="w-full h-56 object-cover" src="./img/FutureWorld.jpg" alt="Project 1">
+          <div class="py-4 px-6">
+            <h2 class="text-2xl text-white mb-2">FutureWorld</h2>
+            <p class="text-md text-gray-800">A project to create awareness for the 17 UN Sustainable Development Goals.</p>
+            <a href="https://futureworld.vercel.app/" class="block bg-red-600 hover:bg-red-500 text-white font-semibold rounded-lg py-2 px-4 mt-4">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden border">
+          <img class="w-full h-56 object-cover" src="./img/Global Solutions.jpg" alt="Project 2">
+          <div class="py-4 px-6">
+            <h2 class="text-2xl font-bold text-white mb-2">Global Solutions</h2>
+            <p class="text-md text-gray-800">A place to find inspiration for the UN Sustainable Development Goals.</p>
+            <a href="https://globalsolutions.vercel.app" class="block bg-red-600 hover:bg-red-500 text-white font-semibold rounded-lg py-2 px-4 mt-4">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden border">
+          <img class="w-full h-56 object-cover" src="./img/AirDates.jpg" alt="Project 3">
+          <div class="py-4 px-6">
+            <h2 class="text-2xl font-bold text-white mb-2">AIRDATES</h2>
+            <p class="text-md text-gray-800">Not sure where to watch a movie/tv-show? Here you can see where you can stream it!</p>
+            <a href="#" class="block bg-red-600 hover:bg-red-500 text-white font-semibold rounded-lg py-2 px-4 mt-4">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Skills section -->
+<section id="skills" class="pt-5 sectionheight">
+    <h2 class="text">"FOR INSIGHT"</h2>
+
+    <div class="container">
+      <div class="flex flex-wrap justify-start">
+                <div class="w-full md:w-6/12 px-4">
+          <h3 class="text-2xl text-gray-700">My Progress</h3>
+          <div class="w-full mb-10">
+            <p class="text-white">HTML</p>
+            <div class="bg-red-600 h-4 rounded-full" style="width: 95%;"></div>
+          </div>
+          <div class="w-full mb-10">
+            <p class="text-white">CSS</p>
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+          </div>
+          <div class="w-full mb-10">
+            <p class="text-white">JavaScript</p>
+            <div class="bg-yellow-500 h-4 rounded-full" style="width: 45%;"></div>
+          </div>
+          <div class="w-full mb-10">
+            <p class="text-white">Angular</p>
+            <div class="bg-blue-600 h-4 rounded-full" style="width: 60%;"></div>
+          </div>
+          <div class="w-full mb-10">
+            <p class="text-white">React</p>
+            <div class="bg-gray-500 h-4 rounded-full" style="width: 30%;"></div>
+          </div>
+        </div>
+        <div class="w-full md:w-6/12 px-4">
+          <h3 class="mb-4 text-2xl text-gray-700">My Skills</h3>
+          <p class="text-white text-lg mb-5"><strong class="text-red-600">HTML:</strong> I have been using HTML for over 5 years and am familiar with all its major features and best practices.</p>
+          <p class="text-white text-lg mb-5"><strong class="text-red-600">CSS:</strong> I am well-versed in CSS and have worked on many projects that require complex styling and layout.</p>
+          <p class="text-white text-lg mb-5"><strong class="text-red-600">JavaScript:</strong> I have experience with JavaScript and I am comfortable using it for front-end development.</p>
+          <p class="text-white text-lg mb-5"><strong class="text-red-600">Angular:</strong> I have used Angular for some and am comfortable with its architecture and data-binding features.</p>
+          <p class="text-white text-lg mb-5"><strong class="text-red-600">React:</strong> I'm currently practicing and getting into React and can't wait to improve day by day!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Contact -->
+<section id="contact" class="pt-24 pb-40">
+    <div class="container">
+        <h2 class="text">"FOR CONTACT"</h2>
+      <div class="items-center">
+        <p class="text-white mb-5">Enter your <strong class="text-red-600">email</strong> OR <strong class="text-red-600">phone number</strong> and I will get in touch.</p>
+        <form>
+          <div class="mb-4">
+            <label for="email" class="block text-red-600">Email address</label>
+            <input type="email" id="email" class="form-input w-full border-gray-300 border p-2 rounded bg-white" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-red-600">Phone number</label>
+            <input type="tel" id="phone" class="form-input w-full rounded-md border-gray-300 border p-2 rounded bg-white" placeholder="Enter phone number">
+          </div>
+          <p class="text-gray-500">I'll never share your email or phone number with anyone else.</p>
+          <button type="submit" class="bg-red-600 text-white py-2 px-4 rounded-md">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!--Footer-->
+  <section>
+    <div class="border-t-2 w-full py-4">
+      <p class=" text-center text-red-600">All rights reserved <br>Emil Marcel Mortensen</p>
+    </div>
+  </section>
+
+</body>
+</html>

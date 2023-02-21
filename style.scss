@@ -1,0 +1,98 @@
+$white-color: #FFFCF2;
+$white2-color: #CCC5B9;
+$black-color: #000000;
+$black2-color: #403D39;
+$prim-color: #eb2828;
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: $black-color;
+    font-family: "HelveticaNeue";
+    scroll-behavior: smooth;
+    color: $white-color;
+}
+
+.top-section {
+  height: 100vh;
+}
+
+h1{
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1 span{
+    outline: 2px;
+	-webkit-text-stroke: 2px $white-color;
+	-webkit-text-fill-color: $black-color;
+}
+h2{
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.hero{
+    min-height: 100vh;
+    padding-top: 200px;
+} 
+
+.sectionheight{
+  min-height: 75vh;
+}
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hideonphone{
+    display: none;
+  }
+  .sectionheight{
+    min-height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
+      .text {
+        position: relative;
+        font-size: 5rem;
+        animation: slide-up 2.5s;
+      }
+      
+      .second {
+        top: -1rem;
+        animation: slide-left;
+      }
+      
+      .desc {
+        animation: slide-left 2.5s;
+        font-size: 1.5em;
+      }
+      
+      @keyframes slide-up {
+        from {
+          transform: translateY(5rem);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes slide-left {
+        from {
+          transform: translateX(-5rem);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+
+      .progress-bar-height {
+        height: 30px;
+      }
